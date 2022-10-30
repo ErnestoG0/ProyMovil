@@ -1,3 +1,18 @@
 <resources>
     <string name="app_name">MyApplicationMovil</string>
+    //CAJAS DE TEXTO
+    <string name="til_correo">Correo</string>
+    <string name="til_password">Contraseña</string>
+    <string name="til_nombre">Nombre</string>
+    <string name="til_usuario">Usuario</string>
+    <string name="til_apellidos">Apellidos</string>
+    <string name="til_telefono">Telefono</string>
+    //ETIQUETAS DE TEXTO
+    <string name="txt_bienvenido">Iniciar Sesión</string>
+    <string name="txt_registrar">¿No Tienes una Cuenta?</string>
+    //BOTONES
+    <string name="btn_registrar">Registrarme</string>
+    <string name="btn_iniciar">Iniciar</string>
+    //MENSAJES DE ALERTA
+    <string name="mensajeayuda">*Campo Obligatorio*</string>
 </resources>
