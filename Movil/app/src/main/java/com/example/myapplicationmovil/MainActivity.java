@@ -3,16 +3,23 @@ package com.example.myapplicationmovil;
 import androidx.appcompat.app.ActionBar;
 import androidx.appcompat.app.AppCompatActivity;
 
+import android.content.Intent;
 import android.os.Build;
 import android.os.Bundle;
+import android.view.View;
 import android.view.Window;
+import android.widget.Button;
+import android.widget.TextView;
 
 public class MainActivity extends AppCompatActivity {
+    private TextView btn_Registrar;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
+        Inicializadores();
+        Iniciar();
         Barra();
         Ventana();
     }//FIN DEL ONCREATE
@@ -27,5 +34,18 @@ public class MainActivity extends AppCompatActivity {
     private void Barra(){
         ActionBar actionBar = getSupportActionBar();
         actionBar.hide();
+    }
+
+    private void Inicializadores(){
+        btn_Registrar = (TextView) findViewById(R.id.btn_Registrar_Login);
+    }
+
+    private void Iniciar(){
+        btn_Registrar.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                startActivity(new Intent(MainActivity.this,RegistrarUsuario.class));
+            }
+        });
     }
 }
