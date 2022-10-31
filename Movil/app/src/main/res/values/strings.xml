@@ -10,9 +10,11 @@
     //ETIQUETAS DE TEXTO
     <string name="txt_bienvenido">Iniciar Sesión</string>
     <string name="txt_registrar">¿No Tienes una Cuenta?</string>
+    <string name="txt_registro">Registro</string>
     //BOTONES
     <string name="btn_registrar">Registrarme</string>
     <string name="btn_iniciar">Iniciar</string>
     //MENSAJES DE ALERTA
-    <string name="mensajeayuda">*Campo Obligatorio*</string>
+    <string name="msjayuda">*Campo Obligatorio*</string>
+    <string name="msj_caracteres">*Debe Tener Mas de 6 Caracteres*</string>
 </resources>

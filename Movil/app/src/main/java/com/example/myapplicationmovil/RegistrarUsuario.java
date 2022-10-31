@@ -7,12 +7,12 @@ import android.os.Build;
 import android.os.Bundle;
 import android.view.Window;
 
-public class MainActivity extends AppCompatActivity {
+public class RegistrarUsuario extends AppCompatActivity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_main);
+        setContentView(R.layout.activity_registrar_usuario);
         Barra();
         Ventana();
     }//FIN DEL ONCREATE
@@ -26,6 +26,8 @@ public class MainActivity extends AppCompatActivity {
 
     private void Barra(){
         ActionBar actionBar = getSupportActionBar();
-        actionBar.hide();
+        actionBar.setTitle(R.string.txt_registro);
+        actionBar.setDisplayShowHomeEnabled(true);
+        actionBar.setDisplayHomeAsUpEnabled(true);
     }
 }
