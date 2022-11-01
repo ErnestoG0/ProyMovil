@@ -14,6 +14,14 @@ import android.widget.TextView;
 public class MainActivity extends AppCompatActivity {
     private TextView btn_Registrar;
 
+    /*
+        Host: sql.freedb.tech
+        port: 3306
+        User: freedb_AdProTienAd
+        Pass:  hwGsZ7PHU9egUT#
+        DB: freedb_ProTienAd
+    */
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
