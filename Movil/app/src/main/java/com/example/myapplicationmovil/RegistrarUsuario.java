@@ -5,6 +5,7 @@ import androidx.appcompat.app.AppCompatActivity;
 
 import android.os.Build;
 import android.os.Bundle;
+import android.view.View;
 import android.view.Window;
 import android.widget.Button;
 
@@ -46,22 +47,26 @@ public class RegistrarUsuario extends AppCompatActivity {
     }
 
     private void Registrar_Usuario(){
-        String s_correo_r = "";
-        String s_usuario_r = "";
-        String s_password_r = "";
-        s_correo_r = til_correo_r.getEditText().getText().toString();
-        s_usuario_r = til_usuario_r.getEditText().getText().toString();
-        s_password_r = til_password_r.getEditText().getText().toString();
-
-        if(s_correo_r.isEmpty() || !s_correo_r.contains("@")){
-            ShowError(til_correo_r, "Correo Incorrecto");
-        }if(s_usuario_r.isEmpty() || s_usuario_r.length() < 5){
-            ShowError(til_usuario_r, "Nombre de Usuario corto");
-        }if(s_password_r.isEmpty() || s_password_r.length()<6){
-            ShowError(til_password_r, "Contraseña Muy Debil");
-        }else {
-            //Aquiva el codigo del registro
-        }
+        btn_registrar_r.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                String s_correo_r = "";
+                String s_usuario_r = "";
+                String s_password_r = "";
+                s_correo_r = til_correo_r.getEditText().getText().toString();
+                s_usuario_r = til_usuario_r.getEditText().getText().toString();
+                s_password_r = til_password_r.getEditText().getText().toString();
+                if(s_correo_r.isEmpty() || !s_correo_r.contains("@")){
+                    ShowError(til_correo_r, "Correo Incorrecto");
+                }if(s_usuario_r.isEmpty() || s_usuario_r.length() < 5){
+                    ShowError(til_usuario_r, "Nombre de Usuario corto");
+                }if(s_password_r.isEmpty() || s_password_r.length()<6){
+                    ShowError(til_password_r, "Contraseña Muy Debil");
+                }else {
+                    //Aquiva el codigo del registro
+                }
+            }
+        });
     }
 
     @Override

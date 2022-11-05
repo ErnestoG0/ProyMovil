@@ -27,6 +27,10 @@
         app:helperTextEnabled="true"
         app:helperTextTextColor="@color/black"
         app:hintTextColor="@color/black"
+        app:boxStrokeErrorColor="@color/design_default_color_error"
+        app:counterOverflowTextColor="@color/design_default_color_error"
+        app:errorIconTint="@color/design_default_color_error"
+        app:errorTextColor="@color/design_default_color_error"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent">
@@ -64,6 +68,10 @@
         app:boxStrokeColor="@color/black"
         app:hintTextColor="@color/black"
         app:boxBackgroundColor="@color/white"
+        app:boxStrokeErrorColor="@color/design_default_color_error"
+        app:counterOverflowTextColor="@color/design_default_color_error"
+        app:errorIconTint="@color/design_default_color_error"
+        app:errorTextColor="@color/design_default_color_error"
         >
 
         <com.google.android.material.textfield.TextInputEditText
@@ -104,6 +112,10 @@
         app:boxStrokeColor="@color/black"
         app:hintTextColor="@color/black"
         app:boxBackgroundColor="@color/white"
+        app:boxStrokeErrorColor="@color/design_default_color_error"
+        app:counterOverflowTextColor="@color/design_default_color_error"
+        app:errorIconTint="@color/design_default_color_error"
+        app:errorTextColor="@color/design_default_color_error"
        >
 
         <com.google.android.material.textfield.TextInputEditText
